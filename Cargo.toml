@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "crates/dojo-sdk-godot"
+]
+resolver = "2"
+
+[patch.crates-io]
+starknet-core = { git = "https://github.com/kariy/starknet-rs", branch = "dojo-patch" }

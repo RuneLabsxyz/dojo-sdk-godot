@@ -1,0 +1,23 @@
+[package]
+name = "dojo-sdk-godot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+godot = { git = "https://github.com/godot-rust/gdext", branch = "master", features = ["experimental-threads", "experimental-wasm"] }
+
+serde = "1.0"
+starknet = "0.11.0"
+starknet-types-core = "0.1.5"
+
+tokio = "1.39.2"
+torii-client = { git = "https://github.com/runelabsxyz/dojo.git", branch = "feat/godot" }
+torii-grpc = { git = "https://github.com/runelabsxyz/dojo.git", branch = "feat/godot" }
+dojo-types = { git = "https://github.com/runelabsxyz/dojo.git", branch = "feat/godot" }
+cainome = { git = "https://github.com/cartridge-gg/cainome", tag = "v0.3.2" }
+thiserror = "1.0.63"
+async-channel = "2.3.1"
+log = "0.4.22"
+wasm-bindgen-futures = "0.4.43"
+futures-util = "0.3.30"
+

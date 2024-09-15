@@ -51,6 +51,7 @@
 
           loadedChain = pkgs.rust-bin.stable."1.80.0".default.override {
             extensions = [ "rust-src" ];
+            targets = [ "wasm32-unknown-unknown" ];
           };
 
           craneLibLLvmTools =
